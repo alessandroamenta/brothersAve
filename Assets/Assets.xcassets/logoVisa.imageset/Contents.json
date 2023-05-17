@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "logoVisa.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

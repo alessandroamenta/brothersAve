@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChefConversationCell" rowHeight="89" id="yap-kz-3hc" customClass="ChefConversationCell" customModule="Food_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yap-kz-3hc" id="5pE-Iq-QCw">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsH-pg-TjX">
+                        <rect key="frame" x="15" y="10" width="290" height="69"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_account_circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ucy-Qd-yqG">
+                                <rect key="frame" x="15" y="14.666666666666671" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="BPb-4D-vhC"/>
+                                    <constraint firstAttribute="height" constant="40" id="QJx-jG-eTE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userName..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxU-Dv-bdd">
+                                <rect key="frame" x="65" y="14.666666666666668" width="205" height="18.000000000000004"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="message..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAQ-ud-XFX">
+                                <rect key="frame" x="65" y="32.666666666666664" width="205" height="14.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="0.70338258050000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBG-F0-dMo">
+                                <rect key="frame" x="249" y="52" width="21" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.0" alpha="0.70338258050000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KAQ-ud-XFX" firstAttribute="top" secondItem="uxU-Dv-bdd" secondAttribute="bottom" id="1Qb-KH-Xtg"/>
+                            <constraint firstItem="tBG-F0-dMo" firstAttribute="top" secondItem="KAQ-ud-XFX" secondAttribute="bottom" constant="5" id="9AU-q9-erq"/>
+                            <constraint firstAttribute="trailing" secondItem="KAQ-ud-XFX" secondAttribute="trailing" constant="20" id="B9J-bl-hYM"/>
+                            <constraint firstAttribute="trailing" secondItem="tBG-F0-dMo" secondAttribute="trailing" constant="20" id="FeL-rq-TGi"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="tBG-F0-dMo" secondAttribute="bottom" constant="2" id="QKH-0w-UA6"/>
+                            <constraint firstItem="KAQ-ud-XFX" firstAttribute="leading" secondItem="uxU-Dv-bdd" secondAttribute="leading" id="S3k-qE-5fg"/>
+                            <constraint firstAttribute="trailing" secondItem="uxU-Dv-bdd" secondAttribute="trailing" constant="20" id="cf7-fl-tAM"/>
+                            <constraint firstItem="Ucy-Qd-yqG" firstAttribute="centerY" secondItem="DsH-pg-TjX" secondAttribute="centerY" id="cht-lM-EiF"/>
+                            <constraint firstItem="uxU-Dv-bdd" firstAttribute="leading" secondItem="Ucy-Qd-yqG" secondAttribute="trailing" constant="10" id="lD3-75-0hm"/>
+                            <constraint firstItem="uxU-Dv-bdd" firstAttribute="top" secondItem="Ucy-Qd-yqG" secondAttribute="top" id="nhV-HD-Uh7"/>
+                            <constraint firstItem="Ucy-Qd-yqG" firstAttribute="leading" secondItem="DsH-pg-TjX" secondAttribute="leading" constant="15" id="ylN-H1-Nlx"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="DsH-pg-TjX" secondAttribute="bottom" constant="10" id="98u-f4-tmP"/>
+                    <constraint firstItem="DsH-pg-TjX" firstAttribute="leading" secondItem="5pE-Iq-QCw" secondAttribute="leading" constant="15" id="FcP-20-2Em"/>
+                    <constraint firstItem="DsH-pg-TjX" firstAttribute="top" secondItem="5pE-Iq-QCw" secondAttribute="top" constant="10" id="ljf-HV-s0e"/>
+                    <constraint firstAttribute="trailing" secondItem="DsH-pg-TjX" secondAttribute="trailing" constant="15" id="xun-Lb-oMO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="7hS-hO-Fuz"/>
+            <connections>
+                <outlet property="messageLbl" destination="KAQ-ud-XFX" id="U3f-tO-57y"/>
+                <outlet property="timeLbl" destination="tBG-F0-dMo" id="9J7-ia-wpJ"/>
+                <outlet property="userImage" destination="Ucy-Qd-yqG" id="F7E-cN-LbR"/>
+                <outlet property="userNameLbl" destination="uxU-Dv-bdd" id="yfh-pG-vNO"/>
+            </connections>
+            <point key="canvasLocation" x="77.862595419847324" y="10.211267605633804"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_account_circle.png" width="60" height="60"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

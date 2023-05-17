@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardsCollectionCell" id="lPQ-AX-E54" customClass="CardsCollectionCell" customModule="Food_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="453" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="453" height="108"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nVt-GZ-Wew">
+                        <rect key="frame" x="20" y="8" width="413" height="92"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="logoMastercard" translatesAutoresizingMaskIntoConstraints="NO" id="THf-E3-LWK">
+                                <rect key="frame" x="16" y="23.666666666666671" width="70" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="GPh-ao-rgp"/>
+                                    <constraint firstAttribute="height" constant="45" id="UaG-js-pgh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="••••••••••••4242" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epf-8h-g0u">
+                                <rect key="frame" x="106" y="33.333333333333336" width="235" height="25.666666666666664"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trash.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fcT-ZV-iHv">
+                                <rect key="frame" x="361" y="27" width="40" height="38.666666666666671"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="4oL-bd-gyI"/>
+                                    <constraint firstAttribute="height" constant="40" id="NV9-In-Cd0"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5v4-y2-QTS">
+                                <rect key="frame" x="361" y="26" width="40" height="40"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="DeleteBtnAction:" destination="lPQ-AX-E54" eventType="touchUpInside" id="hcy-ty-cBT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.58039215690000001" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fcT-ZV-iHv" secondAttribute="trailing" constant="12" id="6bf-gx-1lB"/>
+                            <constraint firstItem="5v4-y2-QTS" firstAttribute="trailing" secondItem="fcT-ZV-iHv" secondAttribute="trailing" id="DRX-ig-3dE"/>
+                            <constraint firstItem="5v4-y2-QTS" firstAttribute="top" secondItem="fcT-ZV-iHv" secondAttribute="top" id="Jyv-9H-6nZ"/>
+                            <constraint firstItem="Epf-8h-g0u" firstAttribute="centerY" secondItem="THf-E3-LWK" secondAttribute="centerY" id="Lxe-Ep-leP"/>
+                            <constraint firstItem="5v4-y2-QTS" firstAttribute="leading" secondItem="Epf-8h-g0u" secondAttribute="trailing" constant="20" id="PNo-jQ-hIh"/>
+                            <constraint firstItem="THf-E3-LWK" firstAttribute="leading" secondItem="nVt-GZ-Wew" secondAttribute="leading" constant="16" id="Vug-ub-Mss"/>
+                            <constraint firstItem="fcT-ZV-iHv" firstAttribute="centerY" secondItem="Epf-8h-g0u" secondAttribute="centerY" id="aRl-gP-gYq"/>
+                            <constraint firstItem="THf-E3-LWK" firstAttribute="centerY" secondItem="nVt-GZ-Wew" secondAttribute="centerY" id="kOS-rp-3m2"/>
+                            <constraint firstItem="5v4-y2-QTS" firstAttribute="bottom" secondItem="fcT-ZV-iHv" secondAttribute="bottom" id="mY6-Mc-T79"/>
+                            <constraint firstItem="Epf-8h-g0u" firstAttribute="leading" secondItem="THf-E3-LWK" secondAttribute="trailing" constant="20" id="ooj-6h-ace"/>
+                            <constraint firstItem="5v4-y2-QTS" firstAttribute="leading" secondItem="fcT-ZV-iHv" secondAttribute="leading" id="yQc-Ft-ACP"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="Primary Color"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                                <real key="value" value="0.69999999999999996"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nVt-GZ-Wew" secondAttribute="bottom" constant="8" id="EhA-08-etY"/>
+                <constraint firstAttribute="trailing" secondItem="nVt-GZ-Wew" secondAttribute="trailing" constant="20" id="JlK-Fj-cVd"/>
+                <constraint firstItem="nVt-GZ-Wew" firstAttribute="top" secondItem="lPQ-AX-E54" secondAttribute="top" constant="8" id="U5M-Sb-7b8"/>
+                <constraint firstItem="nVt-GZ-Wew" firstAttribute="leading" secondItem="lPQ-AX-E54" secondAttribute="leading" constant="20" id="m9x-H0-gUJ"/>
+            </constraints>
+            <size key="customSize" width="453" height="106"/>
+            <connections>
+                <outlet property="cardImageView" destination="THf-E3-LWK" id="Wcr-X0-ezA"/>
+                <outlet property="cardNumber" destination="Epf-8h-g0u" id="mip-pe-mWH"/>
+                <outlet property="deleteActionBtn" destination="5v4-y2-QTS" id="5dK-rZ-aSN"/>
+                <outlet property="deleteBtn" destination="fcT-ZV-iHv" id="c5s-DE-zLz"/>
+            </connections>
+            <point key="canvasLocation" x="195" y="44"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="logoMastercard" width="41" height="28"/>
+        <image name="trash.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="Primary Color">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
