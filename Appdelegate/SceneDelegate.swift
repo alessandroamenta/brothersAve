@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  Food App
-//
-//  Created by Chirp Technologies on 27/09/2021.
-//
-
 import UIKit
 import FirebaseAuth
 
